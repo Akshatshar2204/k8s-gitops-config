@@ -34,6 +34,12 @@ alertmanager:
 prometheus:
   enabled: true
   prometheusSpec:
+    image:
+      registry: quay.io
+      repository: prometheus/prometheus
+      tag: v3.15.0-distroless
+      sha: 3e84c7d7c1b07a779c0d51ab41982dce05147a6bb49a674e8dec794a7ba25447
+      pullPolicy: IfNotPresent
     replicas: 1
     retention: 3d
     scrapeInterval: 30s
