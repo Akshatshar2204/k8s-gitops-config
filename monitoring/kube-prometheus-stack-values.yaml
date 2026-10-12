@@ -35,8 +35,8 @@ prometheus:
   enabled: true
   prometheusSpec:
     image:
-      registry: localhost
-      repository: prometheus-capstone-fixed
+      registry: docker.io
+      repository: akshat120210/prometheus-capstone-fixed
       tag: v3.15.0
       pullPolicy: IfNotPresent
     replicas: 1
